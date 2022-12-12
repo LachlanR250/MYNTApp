@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */; };
+		D7FC46162947F19A004DCF34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46152947F19A004DCF34 /* ContentView.swift */; };
+		D7FC46182947F19B004DCF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FC46172947F19B004DCF34 /* Assets.xcassets */; };
+		D7FC461B2947F19B004DCF34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FC461A2947F19B004DCF34 /* Preview Assets.xcassets */; };
+		D7FC461D2947F19B004DCF34 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC461C2947F19B004DCF34 /* Persistence.swift */; };
+		D7FC46202947F19B004DCF34 /* MYNTApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7FC461E2947F19B004DCF34 /* MYNTApp.xcdatamodeld */; };
+		D7FC462B2947F19B004DCF34 /* MYNTAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC462A2947F19B004DCF34 /* MYNTAppTests.swift */; };
+		D7FC46352947F19B004DCF34 /* MYNTAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46342947F19B004DCF34 /* MYNTAppUITests.swift */; };
+		D7FC46372947F19B004DCF34 /* MYNTAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46362947F19B004DCF34 /* MYNTAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7FC46272947F19B004DCF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FC46082947F19A004DCF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FC460F2947F19A004DCF34;
+			remoteInfo = MYNTApp;
+		};
+		D7FC46312947F19B004DCF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FC46082947F19A004DCF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FC460F2947F19A004DCF34;
+			remoteInfo = MYNTApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7FC46102947F19A004DCF34 /* MYNTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYNTAppApp.swift; sourceTree = "<group>"; };
+		D7FC46152947F19A004DCF34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7FC46172947F19B004DCF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7FC461A2947F19B004DCF34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7FC461C2947F19B004DCF34 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D7FC461F2947F19B004DCF34 /* MYNTApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MYNTApp.xcdatamodel; sourceTree = "<group>"; };
+		D7FC46212947F19B004DCF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7FC46262947F19B004DCF34 /* MYNTAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYNTAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FC462A2947F19B004DCF34 /* MYNTAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYNTAppTests.swift; sourceTree = "<group>"; };
+		D7FC46302947F19B004DCF34 /* MYNTAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYNTAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FC46342947F19B004DCF34 /* MYNTAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYNTAppUITests.swift; sourceTree = "<group>"; };
+		D7FC46362947F19B004DCF34 /* MYNTAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYNTAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7FC460D2947F19A004DCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC46232947F19B004DCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC462D2947F19B004DCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7FC46072947F19A004DCF34 = {
+			isa = PBXGroup;
+			children = (
+				D7FC46122947F19A004DCF34 /* MYNTApp */,
+				D7FC46292947F19B004DCF34 /* MYNTAppTests */,
+				D7FC46332947F19B004DCF34 /* MYNTAppUITests */,
+				D7FC46112947F19A004DCF34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7FC46112947F19A004DCF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7FC46102947F19A004DCF34 /* MYNTApp.app */,
+				D7FC46262947F19B004DCF34 /* MYNTAppTests.xctest */,
+				D7FC46302947F19B004DCF34 /* MYNTAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7FC46122947F19A004DCF34 /* MYNTApp */ = {
+			isa = PBXGroup;
+			children = (
+				D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */,
+				D7FC46152947F19A004DCF34 /* ContentView.swift */,
+				D7FC46172947F19B004DCF34 /* Assets.xcassets */,
+				D7FC461C2947F19B004DCF34 /* Persistence.swift */,
+				D7FC46212947F19B004DCF34 /* Info.plist */,
+				D7FC461E2947F19B004DCF34 /* MYNTApp.xcdatamodeld */,
+				D7FC46192947F19B004DCF34 /* Preview Content */,
+			);
+			path = MYNTApp;
+			sourceTree = "<group>";
+		};
+		D7FC46192947F19B004DCF34 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D7FC461A2947F19B004DCF34 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7FC46292947F19B004DCF34 /* MYNTAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7FC462A2947F19B004DCF34 /* MYNTAppTests.swift */,
+			);
+			path = MYNTAppTests;
+			sourceTree = "<group>";
+		};
+		D7FC46332947F19B004DCF34 /* MYNTAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7FC46342947F19B004DCF34 /* MYNTAppUITests.swift */,
+				D7FC46362947F19B004DCF34 /* MYNTAppUITestsLaunchTests.swift */,
+			);
+			path = MYNTAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7FC460F2947F19A004DCF34 /* MYNTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FC463A2947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTApp" */;
+			buildPhases = (
+				D7FC460C2947F19A004DCF34 /* Sources */,
+				D7FC460D2947F19A004DCF34 /* Frameworks */,
+				D7FC460E2947F19A004DCF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYNTApp;
+			productName = MYNTApp;
+			productReference = D7FC46102947F19A004DCF34 /* MYNTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7FC46252947F19B004DCF34 /* MYNTAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FC463D2947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTAppTests" */;
+			buildPhases = (
+				D7FC46222947F19B004DCF34 /* Sources */,
+				D7FC46232947F19B004DCF34 /* Frameworks */,
+				D7FC46242947F19B004DCF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7FC46282947F19B004DCF34 /* PBXTargetDependency */,
+			);
+			name = MYNTAppTests;
+			productName = MYNTAppTests;
+			productReference = D7FC46262947F19B004DCF34 /* MYNTAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7FC462F2947F19B004DCF34 /* MYNTAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FC46402947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTAppUITests" */;
+			buildPhases = (
+				D7FC462C2947F19B004DCF34 /* Sources */,
+				D7FC462D2947F19B004DCF34 /* Frameworks */,
+				D7FC462E2947F19B004DCF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7FC46322947F19B004DCF34 /* PBXTargetDependency */,
+			);
+			name = MYNTAppUITests;
+			productName = MYNTAppUITests;
+			productReference = D7FC46302947F19B004DCF34 /* MYNTAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7FC46082947F19A004DCF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					D7FC460F2947F19A004DCF34 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					D7FC46252947F19B004DCF34 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D7FC460F2947F19A004DCF34;
+					};
+					D7FC462F2947F19B004DCF34 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D7FC460F2947F19A004DCF34;
+					};
+				};
+			};
+			buildConfigurationList = D7FC460B2947F19A004DCF34 /* Build configuration list for PBXProject "MYNTApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7FC46072947F19A004DCF34;
+			productRefGroup = D7FC46112947F19A004DCF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7FC460F2947F19A004DCF34 /* MYNTApp */,
+				D7FC46252947F19B004DCF34 /* MYNTAppTests */,
+				D7FC462F2947F19B004DCF34 /* MYNTAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7FC460E2947F19A004DCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FC461B2947F19B004DCF34 /* Preview Assets.xcassets in Resources */,
+				D7FC46182947F19B004DCF34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC46242947F19B004DCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC462E2947F19B004DCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7FC460C2947F19A004DCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FC461D2947F19B004DCF34 /* Persistence.swift in Sources */,
+				D7FC46202947F19B004DCF34 /* MYNTApp.xcdatamodeld in Sources */,
+				D7FC46162947F19A004DCF34 /* ContentView.swift in Sources */,
+				D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC46222947F19B004DCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FC462B2947F19B004DCF34 /* MYNTAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FC462C2947F19B004DCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FC46372947F19B004DCF34 /* MYNTAppUITestsLaunchTests.swift in Sources */,
+				D7FC46352947F19B004DCF34 /* MYNTAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7FC46282947F19B004DCF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FC460F2947F19A004DCF34 /* MYNTApp */;
+			targetProxy = D7FC46272947F19B004DCF34 /* PBXContainerItemProxy */;
+		};
+		D7FC46322947F19B004DCF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FC460F2947F19A004DCF34 /* MYNTApp */;
+			targetProxy = D7FC46312947F19B004DCF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7FC46382947F19B004DCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7FC46392947F19B004DCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7FC463B2947F19B004DCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MYNTApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7FC463C2947F19B004DCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MYNTApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7FC463E2947F19B004DCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYNTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MYNTApp";
+			};
+			name = Debug;
+		};
+		D7FC463F2947F19B004DCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYNTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MYNTApp";
+			};
+			name = Release;
+		};
+		D7FC46412947F19B004DCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYNTApp;
+			};
+			name = Debug;
+		};
+		D7FC46422947F19B004DCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6J87FW7W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYNTApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7FC460B2947F19A004DCF34 /* Build configuration list for PBXProject "MYNTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FC46382947F19B004DCF34 /* Debug */,
+				D7FC46392947F19B004DCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FC463A2947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FC463B2947F19B004DCF34 /* Debug */,
+				D7FC463C2947F19B004DCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FC463D2947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FC463E2947F19B004DCF34 /* Debug */,
+				D7FC463F2947F19B004DCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FC46402947F19B004DCF34 /* Build configuration list for PBXNativeTarget "MYNTAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FC46412947F19B004DCF34 /* Debug */,
+				D7FC46422947F19B004DCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7FC461E2947F19B004DCF34 /* MYNTApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7FC461F2947F19B004DCF34 /* MYNTApp.xcdatamodel */,
+			);
+			currentVersion = D7FC461F2947F19B004DCF34 /* MYNTApp.xcdatamodel */;
+			path = MYNTApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D7FC46082947F19A004DCF34 /* Project object */;
+}
