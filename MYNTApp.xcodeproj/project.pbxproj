@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7E68B8F2947F344009FF959 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		D7FC46072947F19A004DCF34 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +108,7 @@
 			children = (
 				D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */,
 				D7FC46152947F19A004DCF34 /* ContentView.swift */,
+				D7E68B8F2947F344009FF959 /* Screens */,
 				D7FC46172947F19B004DCF34 /* Assets.xcassets */,
 				D7FC461C2947F19B004DCF34 /* Persistence.swift */,
 				D7FC46212947F19B004DCF34 /* Info.plist */,
@@ -430,6 +438,7 @@
 				DEVELOPMENT_TEAM = SF6J87FW7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +468,7 @@
 				DEVELOPMENT_TEAM = SF6J87FW7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
