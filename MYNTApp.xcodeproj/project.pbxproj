@@ -78,13 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D7E68B8F2947F344009FF959 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
 		D7FC46072947F19A004DCF34 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +104,6 @@
 			children = (
 				D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */,
 				D7FC46152947F19A004DCF34 /* ContentView.swift */,
-				D7E68B8F2947F344009FF959 /* Screens */,
 				D7FC46172947F19B004DCF34 /* Assets.xcassets */,
 				D7FC461C2947F19B004DCF34 /* Persistence.swift */,
 				D7FC46212947F19B004DCF34 /* Info.plist */,
