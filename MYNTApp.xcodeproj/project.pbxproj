@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7E68B932947FFA3009FF959 /* File in Resources */ = {isa = PBXBuildFile; fileRef = D7E68B922947FFA3009FF959 /* File */; };
 		D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */; };
 		D7FC46162947F19A004DCF34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46152947F19A004DCF34 /* ContentView.swift */; };
 		D7FC46182947F19B004DCF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FC46172947F19B004DCF34 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7E68B922947FFA3009FF959 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		D7FC46102947F19A004DCF34 /* MYNTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYNTAppApp.swift; sourceTree = "<group>"; };
 		D7FC46152947F19A004DCF34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		D7FC46072947F19A004DCF34 = {
 			isa = PBXGroup;
 			children = (
+				D7E68B922947FFA3009FF959 /* File */,
 				D7FC46122947F19A004DCF34 /* MYNTApp */,
 				D7FC46292947F19B004DCF34 /* MYNTAppTests */,
 				D7FC46332947F19B004DCF34 /* MYNTAppUITests */,
@@ -249,6 +252,7 @@
 			files = (
 				D7FC461B2947F19B004DCF34 /* Preview Assets.xcassets in Resources */,
 				D7FC46182947F19B004DCF34 /* Assets.xcassets in Resources */,
+				D7E68B932947FFA3009FF959 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mynt.myntapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,7 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.250dat.MYNTApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mynt.myntapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
