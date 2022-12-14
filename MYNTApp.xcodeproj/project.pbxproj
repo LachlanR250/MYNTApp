@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893ABAF32949503A001E1D61 /* CablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893ABAF22949503A001E1D61 /* CablePage.swift */; };
 		D7E68B932947FFA3009FF959 /* File in Resources */ = {isa = PBXBuildFile; fileRef = D7E68B922947FFA3009FF959 /* File */; };
 		D7E68B9929480C78009FF959 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E68B9829480C78009FF959 /* HomePage.swift */; };
 		D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893ABAF22949503A001E1D61 /* CablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CablePage.swift; sourceTree = "<group>"; };
 		D7E68B922947FFA3009FF959 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		D7E68B9829480C78009FF959 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		D7FC46102947F19A004DCF34 /* MYNTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D7E68B9829480C78009FF959 /* HomePage.swift */,
+				893ABAF22949503A001E1D61 /* CablePage.swift */,
 			);
 			path = SCREEN;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				D7FC461D2947F19B004DCF34 /* Persistence.swift in Sources */,
 				D7FC46202947F19B004DCF34 /* MYNTApp.xcdatamodeld in Sources */,
 				D7FC46162947F19A004DCF34 /* ContentView.swift in Sources */,
+				893ABAF32949503A001E1D61 /* CablePage.swift in Sources */,
 				D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
