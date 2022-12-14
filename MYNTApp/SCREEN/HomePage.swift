@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            List{
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            }
+            .navigationTitle("MYNT ")
+            .toolbarBackground(Color.green, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        }
+        
     }
 }
 
