@@ -20,17 +20,17 @@ struct ContentView: View {
             HomePage()
                 .tabItem(){
                     Image(systemName: "powerplug")
-                    Text("Calculate Amps")
+                    Text("Cable Size")
                 }
             HomePage()
                 .tabItem(){
                     Image(systemName: "bolt.square")
-                    Text("Calculate Amps")
+                    Text("Generator Size")
                 }
             HomePage()
                 .tabItem(){
                     Image(systemName: "envelope")
-                    Text("Calculate Amps")
+                    Text("Contact Us")
                 }
 
         }
