@@ -13,53 +13,41 @@ import CoreData
 
 struct GeneratorPage: View {
     
+    
     // Calc Amp
-    @State private var itemSelected = 0
-    @State private var itemSelected2 = 1
-    @State private var amount : String = ""
-    private let converting = ["kVA","kW","HP"]
-    @State private var amountHP : String = ""
-    
-    
-    
+        @State private var phaseSelected = 0
+        @State private var switchkVASelected : String = "25"
+        @State private var switchVoltsSlected : String = "240"
+        private let phaseSelect = ["One","Three"]
+        
+
+        
     //Functions
-    func convert(_ convert: String) -> String {
-        var conversion: Double = 1.0
-        let amount = Double(convert) ?? 0.0
-        let selectedConvert = converting[itemSelected]
-        let to = converting[itemSelected2]
-        
-        let kVARate = ["kVA": 1,"kW": 0.8,"HP": 1.072]
-        let kWRate = ["kVA": 1.25,"kW": 1,"HP": 1.34]
-        let HPRate = ["kVA": 0.933,"kW": 0.745,"HP": 1]
-        
-        
-        switch(selectedConvert){
-        case "kVA":
-            conversion = amount * (kVARate[to] ?? 0.0)
+        func convertkVA(_ convertkVA: String,_ convertVolts: String) -> String {
+            var conversion: Double = 1.0
+            //let amp = Double(convert) ?? 0.0
+            let kva = Double(convertkVA) ?? 1.0
+            let volt = Double (convertVolts) ?? 1.0
+            let selectedPhase = phaseSelect[phaseSelected]
             
-        case "kW" :
-            conversion = amount * (kWRate[to] ?? 0.0)
+            //let phaseRate = ["One": 1.0, "Three": 1.73205]
             
-        case "HP" :
-            conversion = amount * (HPRate[to] ?? 0.0)
+            switch(selectedPhase){
+            case "One":
+                conversion = (1000 * kva) / volt
+
+            case "Three" :
+                conversion = (1000 * kva) / (1.73205 * volt)
             
-        default :
+            default :
             print("Something went wrong")
-            
+
+            }
+            return String(format: "%.2f", conversion)
         }
         
-        return String(format: "%.2f", conversion)
-    }
-    
-    func convert0(_ convert: String) -> String {
-        var conversion: Double = 1.0
-        let amount = Double(convert) ?? 0.0
+
         
-        conversion = ceil(amount * 3.7769 )
-        
-        return String(format: "%.0f", conversion)
-    }
     
     
     struct contactButtonChange: ButtonStyle {
@@ -138,28 +126,47 @@ struct GeneratorPage: View {
                 })
                 
             }
-            
+            .padding(.bottom, 20)
 
-                Form {
-                    
-
-                    
-                    Section(header: Text("")){
-                        EmptyView()
-                    }
-                    
-                    
-                    Section(header: Text("HP of Motor ")){
-                        TextField("Gen kVA",text:$amountHP).keyboardType(.decimalPad)
-                        
-                    }
-                    Section(header: Text("Required KVA")){
-                        Text("\(convert0(amountHP))")
-                        
-                        
+            Form {
+                Section(header: Text("Select Phase")){
+                    Picker(selection: $phaseSelected, label : Text("Phase")){
+                        ForEach(0 ..< phaseSelect.count) {index in
+                            Text(self.phaseSelect[index]).tag(index)
+                        }
                     }
                     
                 }
+//Calculate amps from KVA and Volts
+                Section(header: Text("Calculate Amp")){
+                    HStack{
+                        Text("KVA:").padding(.trailing, 20)
+                        TextField("Gen kVA",text:$switchkVASelected).keyboardType(.decimalPad)
+                    }
+                        HStack{
+                        Text("Volts:").padding(.trailing, 20)
+                        TextField("Volts",text:$switchVoltsSlected).keyboardType(.decimalPad)
+                    }
+                    Button(action: {
+                        print("Hello, World!")
+                    }, label: {
+                        Text("+")
+                            .padding(10)
+                            .background(Color.gray)
+                            .foregroundColor(Color.black)
+                    })
+                
+                }
+                Section(header: Text("Conversion")){
+                    Text("\(convertkVA(switchkVASelected,switchVoltsSlected ))")
+                }
+                //Colapse
+               
+                //colapse end
+                
+                
+
+            }.navigationBarTitle("AMP Calculator")
         
         
             .scrollContentBackground(.hidden)
