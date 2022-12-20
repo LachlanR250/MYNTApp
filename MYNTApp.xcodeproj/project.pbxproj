@@ -10,6 +10,8 @@
 		893ABAF32949503A001E1D61 /* CablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893ABAF22949503A001E1D61 /* CablePage.swift */; };
 		D79E160129498B8D00A431F9 /* GeneratorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E160029498B8D00A431F9 /* GeneratorPage.swift */; };
 		D79E1604294AE17200A431F9 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E1603294AE17200A431F9 /* CustomButtonStyle.swift */; };
+		D79E160A29526CBF00A431F9 /* InfoToolTipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */; };
+		D79E160D29526DC100A431F9 /* ContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E160C29526DC100A431F9 /* ContactPage.swift */; };
 		D7E68B932947FFA3009FF959 /* File in Resources */ = {isa = PBXBuildFile; fileRef = D7E68B922947FFA3009FF959 /* File */; };
 		D7E68B9929480C78009FF959 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E68B9829480C78009FF959 /* HomePage.swift */; };
 		D7FC46142947F19A004DCF34 /* MYNTAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FC46132947F19A004DCF34 /* MYNTAppApp.swift */; };
@@ -44,6 +46,8 @@
 		893ABAF22949503A001E1D61 /* CablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CablePage.swift; sourceTree = "<group>"; };
 		D79E160029498B8D00A431F9 /* GeneratorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorPage.swift; sourceTree = "<group>"; };
 		D79E1603294AE17200A431F9 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoToolTipPage.swift; sourceTree = "<group>"; };
+		D79E160C29526DC100A431F9 /* ContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPage.swift; sourceTree = "<group>"; };
 		D7E68B922947FFA3009FF959 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		D7E68B9829480C78009FF959 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		D7FC46102947F19A004DCF34 /* MYNTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYNTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,8 @@
 				D7E68B9829480C78009FF959 /* HomePage.swift */,
 				893ABAF22949503A001E1D61 /* CablePage.swift */,
 				D79E160029498B8D00A431F9 /* GeneratorPage.swift */,
+				D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */,
+				D79E160C29526DC100A431F9 /* ContactPage.swift */,
 			);
 			path = SCREEN;
 			sourceTree = "<group>";
@@ -300,7 +306,9 @@
 				D7E68B9929480C78009FF959 /* HomePage.swift in Sources */,
 				D7FC461D2947F19B004DCF34 /* Persistence.swift in Sources */,
 				D79E1604294AE17200A431F9 /* CustomButtonStyle.swift in Sources */,
+				D79E160D29526DC100A431F9 /* ContactPage.swift in Sources */,
 				D7FC46202947F19B004DCF34 /* MYNTApp.xcdatamodeld in Sources */,
+				D79E160A29526CBF00A431F9 /* InfoToolTipPage.swift in Sources */,
 				D7FC46162947F19A004DCF34 /* ContentView.swift in Sources */,
 				893ABAF32949503A001E1D61 /* CablePage.swift in Sources */,
 				D79E160129498B8D00A431F9 /* GeneratorPage.swift in Sources */,

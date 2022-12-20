@@ -59,7 +59,7 @@ struct CablePage: View {
                 conversion = "4 x 240"
                 
             default :
-                conversion = "Too Large"
+                conversion = "Too Big"
                 print("Something went wrong")
                 
             }
@@ -97,7 +97,7 @@ struct CablePage: View {
                 conversion = "4 x 240"
                 
             default :
-                conversion = "Too Large"
+                conversion = "Too Big"
                 print("Something went wrong")
             }
             
@@ -147,7 +147,7 @@ struct CablePage: View {
                 conversion = "3 x 240"
                 
             default :
-                conversion = "Too Large"
+                conversion = "Too Big"
                 print("Something went wrong")
             }
             
@@ -184,7 +184,7 @@ struct CablePage: View {
                 conversion = "3 x 240"
                 
             default :
-                conversion = "Too Large"
+                conversion = "Too Big"
                 print("Something went wrong")
             }
             
@@ -223,151 +223,156 @@ struct CablePage: View {
             //     in the middle.
         }
     }
-    
-    
+
+    @State private var path = NavigationPath()
     var body: some View {
-   
-        
         NavigationStack {
-            
             List {
-                
                 Text("Cable Calculator")
                     .padding(.leading, -100)
                     .font(.title)
                     .fontWeight(.bold)
-                
                     .navigationTitle("MYNT - First Element")
                     .frame(width:500)
                     .toolbarBackground(
                         Color("MYNTGreen"),
                         for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
-                //this is where it was before
                 
-                HStack {
+             
                     
-                    Button {
-                        print("Hello, World!")
-                    }
-                label: {
-                    Text("CONTACT US")
-                        .font(.system(size:25))
-                        .fontWeight(.bold)
-                        .padding(.leading, 50)
-                        .padding(.trailing, 50)
-                        .padding(.top, 15)
-                        .padding(.bottom, 15)
-                        .background(customColor.myntColor)
-                        .cornerRadius(10)
-                        .clipShape(Capsule())
-                        .foregroundColor(customColor.myColor)
-                        .frame(maxWidth: 530)
-                        .shadow(color: .gray, radius:5, x:1, y:4)
-                    
-                }
-                    //.buttonStyle(contactButtonChange())
-                .onHover { over in
-                    self.isOverButton = over
-                    print("isOverButton:", self.isOverButton, "over:", over)
-                }
-                .overlay(VStack {
-                    if self.isOverButton {
-                        Rectangle()
-                            .stroke(Color.blue, lineWidth: 2)
+                    Group {
+                        /*   NavigationStack(path: $path) {
+                         Button {
+                         
+                         path.append("HomePage")
+                         } label: { */
                         
-                    } else {
-                        EmptyView()
+                        NavigationLink(destination: ContactPage()) {
+                            Text("CONTACT US")
+                            
+                   
+                                .font(.system(size:25))
+                                .fontWeight(.bold)
+                                .padding(.leading, 50)
+                                .padding(.trailing, 50)
+                                .padding(.top, 15)
+                                .padding(.bottom, 15)
+                                .background(customColor.myntColor)
+                                .cornerRadius(10)
+                                .clipShape(Capsule())
+                                .foregroundColor(customColor.myColor)
+                                .frame(maxWidth: 530)
+                                .shadow(color: .gray, radius:5, x:1, y:4)
+                        } .buttonStyle(PlainButtonStyle())
                     }
-                })
                     
-                    Button(action: {
-                        print("Hello, World!")
-                    }, label: {
-                        Text("i")
-                            .padding(20)
-                            .frame(width: 60, height: 60)
-                            .background(customColor.myColor)
-                            .clipShape(Capsule())
-                            .foregroundColor(Color.gray)
-                            .font(.system(size:25))
-                            .fontWeight(.bold)
-                            .shadow(color: .gray, radius:4, x:1, y:4)
-                    })
                     
-                    .padding(.trailing, 40)
-                }
-                .frame(width:440)
-                
-                Spacer()
-                
+                    
+                    Group {
+                        
+                        NavigationLink(destination: InfoToolTipPage()){
+                            Text("HELP ME")
+                                .padding(.leading, 50)
+                                .padding(.trailing, 50)
+                                .padding(.top, 15)
+                                .padding(.bottom, 15)
+                            //  .frame(width: 300, height: 60)
+                                .background(customColor.myColor)
+                                .clipShape(Capsule())
+                                .foregroundColor(Color.gray)
+                                .font(.system(size:25))
+                                .fontWeight(.bold)
+                                .shadow(color: .gray, radius:4, x:1, y:4)
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
+                        .padding(.trailing, 40)
+                        
+                    }
+                    .padding(.leading, 60)
+                    
+ 
+                VStack {
+                    Spacer()
+                } .frame(height:1)
                 
                 Text("Calculate Cable")
                     .fontWeight(.bold)
+                    .font(.system(size:25))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 30)
-                
-                HStack{
+                    .padding(.leading, 20)
+                HStack{ //<- this is HStack, code: 1
                     //Calculate amps from KVA and Volts
                     Section(){
-                        TextField("Gen kVA",text:$switchAmp).keyboardType(.decimalPad)
-                        Picker(selection: $calcSelected, label : Text("Select")){
-                            ForEach(0 ..< calcSelect.count) {index in
-                                Text(self.calcSelect[index]).tag(index)
-                            }
-                        }.accentColor(Color.black)
+                        HStack { //<- this is HStack, code: 2
+                            TextField("Insert Value",text:$switchAmp).keyboardType(.decimalPad)
+                                .textFieldStyle(.roundedBorder).shadow(color: .gray, radius:6, x:3, y:3)
                         
+                        } // <- this is end of HStack, code: 2
+                        
+                        
+                        .foregroundColor(Color.black)
+                     //   .background(Color.white)
+                       // .shadow(color: .gray, radius:6, x:1, y:4)
+                        HStack { //<- this is HStack, code: 3
+                            Picker(selection: $calcSelected, label : Text("")){
+                                ForEach(0 ..< calcSelect.count) {index in
+                                    Text(self.calcSelect[index]).tag(index)
+                                }
+                            }
+                        } // <- this is the end of the HStack code: 3
+                        //.padding(.leading, 10)
+                       .padding(.trailing, 40)
+                        .background(customColor.lightGray)
+                        .cornerRadius(15)
+                        .accentColor(Color.black)
                     }
                     .padding(.leading, 10)
                     .padding(.trailing, 20)
+                    .padding(.bottom, 20)
                     .font(.system(size:25))
-                    // .background(Color.clear)
-                    .background(customColor.lightGray)
                     .cornerRadius(15)
+                } // <- this is the end of the HStack code: 1
+                .frame(height:40)
+//                .shadow(color: .gray, radius:6, x:1, y:15)
+                
+                Group {
                     
+                    Text("Conversion")
+                        .fontWeight(.bold)
+                        .font(.system(size:25))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 20)
+                    //   Spacer()
+                    Text("90° : \(convertCable(switchAmp)) mm")
+                        .foregroundColor(.black)
+                        .font(.title)
+                        .padding(35)
+                        .frame(width: 300, height: 60, alignment: .leading)
+                        .background(customColor.lightMynt)
+                        .cornerRadius(40)
+                    Text("110° : \(convertCable110(switchAmp)) mm")
+                        .foregroundColor(.black)
+                        .font(.title)
+                        .padding(35)
+                        .frame(width: 300, height: 60, alignment: .leading)
+                        .background(customColor.lightMynt)
+                        .cornerRadius(40)
+                    /*         Section(header: Text("Conversion")){
+                     Text("90 Deg: \(convertCable(switchAmp)) mm")
+                     }  .listRowBackground(customColor.myntColor)
+                     .cornerRadius(10)
+                     Section{
+                     Text("110 Deg: \(convertCable110(switchAmp)) mm")
+                     } .listRowBackground(customColor.myntColor)       */
                 }
-                
                 Spacer()
-                
-                Text("90 Deg: \(convertCable(switchAmp)) mm")
-                    .foregroundColor(.black)
-                    .font(.title)
-                    .padding(35)
-                    .frame(width: 300, height: 60, alignment: .leading)
-                    .background(customColor.lightMynt)
-                    .cornerRadius(40)
-                
-                Text("110 Deg: \(convertCable110(switchAmp)) mm")
-                    .foregroundColor(.black)
-                    .font(.title)
-                    .padding(35)
-                    .frame(width: 300, height: 60, alignment: .leading)
-                    .background(customColor.lightMynt)
-                    .cornerRadius(40)
-                
-                
-       /*         Section(header: Text("Conversion")){
-                    Text("90 Deg: \(convertCable(switchAmp)) mm")
-                    
-                }  .listRowBackground(customColor.myntColor)
-                    .cornerRadius(10)
-                
-                
-                
-                Section{
-                    Text("110 Deg: \(convertCable110(switchAmp)) mm")
-                } .listRowBackground(customColor.myntColor)
-             
-       */
-                Spacer()
-                
                 Button {
                     print("Hello, World!")
                 }
             label: {
                 Text("PRINT")
                     .font(.system(size:25))
-                
                     .fontWeight(.bold)
                     .padding(.leading, 50)
                     .padding(.trailing, 50)
@@ -380,29 +385,24 @@ struct CablePage: View {
                     .frame(maxWidth: 530)
                     .shadow(color: .gray, radius:5, x:1, y:4)
                     .padding(.leading, 170)
-                
             }
-                
                 //TEST AREA
-                
                 //  Button("Print") {}
                 // .buttonStyle(CustomButtonStyle())
                 // end test area
-                
-            }
+            } // <- that right there is the end of the list
+            .environment(\.defaultMinListRowHeight, 1)
             
+            //this is the end of the List
+                      //  .frame(width:470)
+                       // .padding(.leading, 20)
+                      //  .padding(.trailing, 20)
             
             //THIS IS THE NEXT THING TO WORK ON -> TRY TO GET RID OF THE LINES IN BETWEEN THE LIST ROWS
             .onAppear {
                 UITableView.appearance().separatorStyle = .none
             }
-            
-            
-            
-           //this is the end of the List
-          //  .frame(width:470)
-           // .padding(.leading, 20)
-          //  .padding(.trailing, 20)
+
             
             
         } //this is the end of the NavigationStack
