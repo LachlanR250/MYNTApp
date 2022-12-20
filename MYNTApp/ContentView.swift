@@ -17,17 +17,17 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            HomePage()
+            CablePage()
                 .tabItem(){
                     Image(systemName: "powerplug")
                     Text("Cable Size")
                 }
-            HomePage()
+            GeneratorPage()
                 .tabItem(){
                     Image(systemName: "bolt.square")
                     Text("Generator Size")
                 }
-            HomePage()
+            ContactPage()
                 .tabItem(){
                     Image(systemName: "envelope")
                     Text("Contact Us")
