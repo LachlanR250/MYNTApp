@@ -10,16 +10,11 @@ import SwiftUI
 
 
 
-/*
-struct customColors {
-    static let myColor = Color("mycolor")
-    static let myntColor = Color("MYNTGreen")
-    static let lightGray = Color("lightGray")
-    static let lightMynt = Color("lightMynt")
-}
+
+
  
  
- */ //why don't these colours work??
+  //why don't these colours work??
 
 struct ContactPage: View {
     

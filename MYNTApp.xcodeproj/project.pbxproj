@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		892CBBC72952C0440013AA84 /* ContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CBBC62952C0440013AA84 /* ContactPage.swift */; };
 		893ABAF32949503A001E1D61 /* CablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893ABAF22949503A001E1D61 /* CablePage.swift */; };
+		89E8364A29667FB80036C860 /* spare of cable page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E8364929667FB80036C860 /* spare of cable page.swift */; };
+		89E96D2F29651B0E005B12F1 /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E96D2E29651B0E005B12F1 /* TextCardView.swift */; };
 		D79E160129498B8D00A431F9 /* GeneratorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E160029498B8D00A431F9 /* GeneratorPage.swift */; };
 		D79E1604294AE17200A431F9 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E1603294AE17200A431F9 /* CustomButtonStyle.swift */; };
 		D79E160A29526CBF00A431F9 /* InfoToolTipPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		892CBBC62952C0440013AA84 /* ContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPage.swift; sourceTree = "<group>"; };
 		893ABAF22949503A001E1D61 /* CablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CablePage.swift; sourceTree = "<group>"; };
+		89E8364929667FB80036C860 /* spare of cable page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "spare of cable page.swift"; sourceTree = "<group>"; };
+		89E96D2E29651B0E005B12F1 /* TextCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
 		D79E160029498B8D00A431F9 /* GeneratorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorPage.swift; sourceTree = "<group>"; };
 		D79E1603294AE17200A431F9 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoToolTipPage.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				D7E68B9829480C78009FF959 /* HomePage.swift */,
 				893ABAF22949503A001E1D61 /* CablePage.swift */,
+				89E8364929667FB80036C860 /* spare of cable page.swift */,
+				89E96D2E29651B0E005B12F1 /* TextCardView.swift */,
 				D79E160929526CBF00A431F9 /* InfoToolTipPage.swift */,
 				D79E160029498B8D00A431F9 /* GeneratorPage.swift */,
 				892CBBC62952C0440013AA84 /* ContactPage.swift */,
@@ -306,6 +312,8 @@
 				D7E68B9929480C78009FF959 /* HomePage.swift in Sources */,
 				D7FC461D2947F19B004DCF34 /* Persistence.swift in Sources */,
 				D79E1604294AE17200A431F9 /* CustomButtonStyle.swift in Sources */,
+				89E96D2F29651B0E005B12F1 /* TextCardView.swift in Sources */,
+				89E8364A29667FB80036C860 /* spare of cable page.swift in Sources */,
 				892CBBC72952C0440013AA84 /* ContactPage.swift in Sources */,
 				D7FC46202947F19B004DCF34 /* MYNTApp.xcdatamodeld in Sources */,
 				D79E160A29526CBF00A431F9 /* InfoToolTipPage.swift in Sources */,
@@ -475,6 +483,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Press OK to add your results as an image to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -505,6 +514,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Press OK to add your results as an image to your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

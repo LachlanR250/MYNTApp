@@ -5,9 +5,14 @@
 //  Created by Chloe Flintoff on 4/1/2023.
 //
 
+
+/*
+
+
+
 import SwiftUI
 
-struct customColor {
+struct newColor {
     static let myColor = Color("mycolor")
     static let myntColor = Color("MYNTGreen")
     static let lightGray = Color("lightGray")
@@ -47,7 +52,7 @@ struct TextView: View {
             
         }// <- this is the end of the ZStack
             .frame(width: 350, height: 300, alignment: .topLeading)
-            .background(customColor.myntColor.opacity(0.4))
+            .background(newColor.myntColor.opacity(0.4))
         
         
         
@@ -75,26 +80,8 @@ struct TextView: View {
 
 
 
-struct CablePage: View {
+struct TextCardView: View {
     var textView = TextView()
-    func convertViewToUiImage(_ myView: TextView) -> UIImage {
-        var uiImage = UIImage(systemName: "exclamationmark.triangle.fill")!
-        let controller = UIHostingController(rootView: myView)
-       
-        if let view = controller.view {
-            let contentSize = view.intrinsicContentSize
-            view.bounds = CGRect(origin: .zero, size: contentSize)
-           // view.backgroundColor = (Color.gray)
-
-            let renderer = UIGraphicsImageRenderer(size: contentSize)
-            uiImage = renderer.image { _ in
-                view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
-            }
-        }
-        return uiImage
-    }
-    
-    
     
     var body: some View {
         VStack {
@@ -117,22 +104,41 @@ struct CablePage: View {
                     Text("Add to Photos")
                 }
                 .font(.title)
-                .foregroundColor(customColor.myntColor)
+                .foregroundColor(newColor.myntColor)
             }
             
             Spacer()
         } // <- this is the end of the VStack
     } // <- this is the end of the var body: some View
     
+    func convertViewToUiImage(_ myView: TextView) -> UIImage {
+        var uiImage = UIImage(systemName: "exclamationmark.triangle.fill")!
+        let controller = UIHostingController(rootView: myView)
+       
+        if let view = controller.view {
+            let contentSize = view.intrinsicContentSize
+            view.bounds = CGRect(origin: .zero, size: contentSize)
+           // view.backgroundColor = (Color.gray)
 
+            let renderer = UIGraphicsImageRenderer(size: contentSize)
+            uiImage = renderer.image { _ in
+                view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+            }
+        }
+        return uiImage
+    }
 } //<- this is the end of the struct TextCardView: View
 
 
 
 
 
-struct CablePage_Previews: PreviewProvider {
+struct TextCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CablePage()
+        TextCardView()
     }
 }
+
+
+
+*/

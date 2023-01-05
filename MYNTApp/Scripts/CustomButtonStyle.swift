@@ -1,11 +1,6 @@
 import SwiftUI
 import CoreData
 
-struct customColor {
-    static let myColor = Color("mycolor")
-    static let myntColor = Color("MYNTGreen")
-    static let lightGray = Color("lightGray")
-}
 
 struct CustomButtonStyle: ButtonStyle {
 

@@ -68,7 +68,9 @@ struct HomePage: View {
     }
     .navigationTitle("MYNT - First Element")
     .frame(width:500)
-    .toolbarBackground(customColor.myntColor, for: .navigationBar)
+        
+        //change the colour to mynt green
+    .toolbarBackground(Color.green, for: .navigationBar)
     .toolbarBackground(.visible, for: .navigationBar)
     .toolbarColorScheme(.dark, for: .navigationBar)
     
